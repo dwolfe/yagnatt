@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+  <head>
+    <title>You Ain't Gonna Need All Those Tabs - Closed Tab Log</title>
+    <link href="widgets.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+      body {
+        background-color: #f1f1f1;
+        color: #2c3f4f;
+        font-family: 'PT Sans', Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        position: relative;
+      }
+
+      header {
+        background-color: #3C7A89;
+        padding: 6px 20px;
+      }
+
+      header h1 {
+        color: #ffffff;
+        font-family: Futura, 'Century Gothic', AppleGothic, sans-serif;
+        font-size: 2em;
+        margin: 10px 0;
+        position: relative;
+        text-transform: uppercase;
+        width: 550px;
+      }
+
+      header button {
+        font-size: 2em;
+      }
+
+      h3 {
+        font-style: italic;
+      }
+
+      .container {
+        padding: 10px 20px;
+      }
+
+      .btn-clear-log {
+        float: right;
+        font-size: 1.4em !important;
+        line-height: 2em !important;
+        margin: 8px 0 !important;
+        text-transform: uppercase;
+      }
+
+      table.closed-tabs {
+        border-collapse: collapse;
+        box-shadow: 0 1px 5px #ababab;
+        width: 100%;
+      }
+
+      table.closed-tabs th {
+        border-bottom: solid #dddddd 1px;
+        font-size: 1.2em;
+        padding: 8px 12px;
+        text-align: left;
+      }
+
+      table.closed-tabs td {
+        font-size: 1.1em;
+        padding: 8px 12px;
+      }
+    </style>
+    <script src="moment.min.js"></script>
+    <script src="helpers.js"></script>
+    <script src="log.js"></script>
+  </head>
+  <body>
+
+    <header>
+      <button class="btn-clear-log" id="clearLog">Clear log</button>
+      <h1>You Ain't Gonna Need All Those Tabs</h1>
+    </header>
+
+    <div class="container">
+      <div id="log-data"></div>
+    </div>
+
+  </body>
+</html>

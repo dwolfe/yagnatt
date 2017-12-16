@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+  <head>
+    <title>You Ain't Gonna Need All Those Tabs</title>
+    <link href="widgets.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+      html {
+        height: 360px;
+        width: 280px;
+      }
+
+      body {
+        background-color: #3C7A89;
+        color: #ffffff;
+        font-family: Geneva, 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        position: relative;
+      }
+
+      header {
+        background-color: #ffffff;
+        border-bottom: solid #E0FFFA 0px;
+        margin: 0;
+        padding: 10px 0;
+        width: 100%;
+      }
+
+      header h1 {
+        color: #3C7A89;
+        font-family: Futura, 'Century Gothic', AppleGothic, sans-serif;
+        font-size: 1.75em;
+        margin: 10px 0;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      footer {
+        background: #ffffff;
+        border-top: solid #E0FFFA 0px;
+        bottom: 0;
+        left: 0;
+        padding: 10px;
+        width: 320px;
+        position: fixed;
+      }
+
+      label {
+        color: #E0FFFA;
+        font-size: 0.9em;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+      button {
+        background-color: #3C7A89;
+        border-color: #3C7A89;
+        border-radius: 4px;
+        color: #ffffff;
+        font-size: 1em;
+        font-weight: bold;
+        text-transform: uppercase;
+        width: 128px;
+      }
+
+      .container {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        margin: 10px;
+      }
+    </style>
+    <script src="helpers.js"></script>
+    <script src="popup.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>You Ain't Gonna Need All Those Tabs</h1>
+    </header>
+
+    <div class="container">
+      <p>Let me close tabs that you haven't opened in a while. By default, I'll close tabs that you haven't opened in the last 24 hours and keep a log of the tabs I've closed, but you can change those settings below if you want.</p>
+    </div>
+
+    <div class="container">
+      <label for="expiration-control">Close tabs older than:</label>
+      <select class="setting" id="expiration" name="expiration-control">
+        <option value="12">12 hours</option>
+        <option value="24">24 hours</option>
+        <option value="168">7 days</option>
+        <option value="720">30 days</option>
+      </select>
+    </div>
+
+<!-- Scheduling feature coming soon!
+
+    <div class="container">
+      <span>Run the check every:</span>
+      <select class="setting" id="frequency">
+        <option value="24">24 hours</option>
+        <option value="168">7 days</option>
+        <option value="720">30 days</option>
+      </select>
+    </div>
+
+  -->
+
+    <div class="container">
+      <label for="log-control">Keep a log of closed tabs:</label>
+      <input class="setting" id="log" name="log-control" type="checkbox" value="1" />
+    </div>
+
+    <footer>
+      <button id="doCleanup">Run cleanup</button>
+      <button id="showLog">Show log</button>
+    </footer>
+  </body>
+</html>
