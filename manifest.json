@@ -13,11 +13,6 @@
     "default_title": "YAGNATT"
   },
 
-  "background": {
-    "scripts": ["background.js"],
-    "persistent": false
-  },
-
   "permissions": [
     "activeTab",
     "history",
