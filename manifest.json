@@ -2,7 +2,7 @@
   "manifest_version": 2,
 
   "name": "You Ain't Gonna Need All Those Tabs",
-  "description": "This extension closes tabs that haven't been opened in a while. ... Date library: http://momentjs.com/ ... Form element UI: https://github.com/ramswaroop/ui-kit-for-chrome-extensions ... Broom icon: http://icons8.com/",
+  "description": "This extension closes tabs that haven't been opened in a while.",
   "version": "1.0",
 
   "minimum_chrome_version": "40",

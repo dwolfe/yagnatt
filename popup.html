@@ -41,8 +41,8 @@
         bottom: 0;
         left: 0;
         padding: 10px;
-        width: 320px;
         position: fixed;
+        width: calc(100% - 20px);
       }
 
       label {
@@ -60,7 +60,15 @@
         font-size: 1em;
         font-weight: bold;
         text-transform: uppercase;
-        width: 128px;
+        width: 125px;
+      }
+
+      #doCleanup {
+        float: left;
+      }
+
+      #showLog {
+        float: right;
       }
 
       .container {
@@ -68,6 +76,18 @@
         display: flex;
         justify-content: space-between;
         margin: 10px;
+      }
+
+      .credits {
+        color: #999999;
+        font-size: 0.8em;
+        margin-top: 0;
+        text-align: center;
+        width: 100%;
+      }
+
+      .credits a {
+        color: #999999;
       }
     </style>
     <script src="helpers.js"></script>
@@ -112,6 +132,8 @@
     </div>
 
     <footer>
+      <p class="credits">Thanks: <a href="http://momentjs.com/" target="_blank">Date library</a> &#183; <a href="https://github.com/ramswaroop/ui-kit-for-chrome-extensions" target="_blank">Form element UI</a> &#183; <a href="http://icons8.com/" target="_blank">Broom icon</a></p>
+
       <button id="doCleanup">Run cleanup</button>
       <button id="showLog">Show log</button>
     </footer>
